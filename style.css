@@ -23,13 +23,13 @@ table {
   text-align: center;
 }
 table {
-  width: 90%;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  width: 100%;
+  /* margin-top: 25px;
+  margin-bottom: 25px; */
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
 th {
-  background-color: rgb(71, 71, 71);
+  background-color: #474747;
   color: white;
 }
 td {
@@ -46,4 +46,28 @@ td {
 }
 
 @media only screen and (max-width: 600px) {
+  table {
+    width: 100%;
+  }
+  thead {
+    display: none;
+  }
+  tr:nth-of-type(2n) {
+    background-color: inherit;
+  }
+  tr td:first-child {
+    background: #474747;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: white;
+  }
+  tbody td {
+    display: block;
+    text-align: center;
+  }
+  tbody td:before {
+    content: attr(data-th);
+    display: block;
+    text-align: center;
+  }
 }
