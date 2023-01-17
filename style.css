@@ -1,6 +1,8 @@
 * {
   margin: 0;
   font-family: "Rubik", sans-serif;
+  overflow-x: auto;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -41,4 +43,7 @@ td {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
 }
